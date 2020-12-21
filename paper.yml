@@ -79,30 +79,30 @@ world-settings:
   default:
     remove-corrupt-tile-entities: false
     baby-zombie-movement-modifier: 0.5
-    optimize-explosions: false
+    optimize-explosions: true
     disable-teleportation-suffocation-check: false
     fixed-chunk-inhabited-time: -1
     use-vanilla-world-scoreboard-name-coloring: false
     experience-merge-max-value: -1
     prevent-moving-into-unloaded-chunks: false
-    max-auto-save-chunks-per-tick: 24
+    max-auto-save-chunks-per-tick: 6
     count-all-mobs-for-spawning: false
-    per-player-mob-spawns: false
+    per-player-mob-spawns: true
     delay-chunk-unloads-by: 10s
     should-remove-dragon: false
     falling-block-height-nerf: 0
     tnt-entity-height-nerf: 0
     filter-nbt-data-from-spawn-eggs-and-related: true
-    max-entity-collisions: 8
+    max-entity-collisions: 2
     disable-creeper-lingering-effect: false
     duplicate-uuid-resolver: saferegen
     duplicate-uuid-saferegen-delete-range: 32
     phantoms-do-not-spawn-on-creative-players: true
     phantoms-only-attack-insomniacs: true
     seed-based-feature-search: true
-    grass-spread-tick-rate: 1
+    grass-spread-tick-rate: 4
     water-over-lava-flow-speed: 5
-    use-faster-eigencraft-redstone: false
+    use-faster-eigencraft-redstone: true
     nether-ceiling-void-damage-height: 0
     keep-spawn-loaded: true
     armor-stands-do-collision-entity-lookups: true
@@ -110,7 +110,7 @@ world-settings:
     allow-non-player-entities-on-scoreboards: false
     portal-search-radius: 128
     portal-create-radius: 16
-    container-update-tick-rate: 1
+    container-update-tick-rate: 3
     disable-thunder: false
     skeleton-horse-thunder-spawn-chance: 0.01
     disable-ice-and-snow: false
@@ -119,15 +119,15 @@ world-settings:
     fix-climbing-bypassing-cramming-rule: false
     prevent-tnt-from-moving-in-water: false
     iron-golems-can-spawn-in-air: false
-    armor-stands-tick: true
+    armor-stands-tick: false
     entities-target-with-follow-range: false
     spawner-nerfed-mobs-should-jump: false
-    non-player-arrow-despawn-rate: -1
-    creative-arrow-despawn-rate: -1
+    non-player-arrow-despawn-rate: 60
+    creative-arrow-despawn-rate: 60
     zombies-target-turtle-eggs: true
     zombie-villager-infection-chance: -1.0
     all-chunks-are-slime-chunks: false
-    mob-spawner-tick-rate: 1
+    mob-spawner-tick-rate: 2
     light-queue-size: 20
     auto-save-interval: -1
     enable-treasure-maps: true
@@ -136,7 +136,7 @@ world-settings:
       scan-for-legacy-ender-dragon: true
       disable-pillager-patrols: false
       fix-curing-zombie-villager-discount-exploit: true
-      disable-chest-cat-detection: false
+      disable-chest-cat-detection: true
       nerf-pigmen-from-nether-portals: false
       disable-player-crits: false
       disable-sprint-interruption-on-attack: false
@@ -159,8 +159,8 @@ world-settings:
       MinimumTicks: 100
       MaximumTicks: 600
     despawn-ranges:
-      soft: 32
-      hard: 128
+      soft: 28
+      hard: 96
     frosted-ice:
       enabled: true
       delay:
@@ -179,7 +179,7 @@ world-settings:
         COBBLESTONE: 300
     hopper:
       cooldown-when-full: true
-      disable-move-event: false
+      disable-move-event: true
     lightning-strike-distance-limit:
       sound: -1
       impact-sound: -1
